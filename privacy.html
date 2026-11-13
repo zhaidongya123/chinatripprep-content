@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy · China Travel: Trip Prep</title>
+<style>
+  :root { --paper:#F8F7F4; --ink:#1C1C1E; --ink2:#55555C; --muted:#8A8A90; --line:#E4E2DC; --accent:#1F7A43; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--paper); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased; line-height:1.65; }
+  .wrap { max-width:720px; margin:0 auto; padding:56px 24px 88px; }
+  .eyebrow { font-size:11px; font-weight:700; letter-spacing:.16em; text-transform:uppercase; color:var(--accent); }
+  h1 { font-size:38px; line-height:1.12; letter-spacing:-.03em; margin:14px 0 8px; font-weight:800; }
+  .meta { font-size:13px; color:var(--muted); }
+  .tabs { display:flex; flex-wrap:wrap; gap:8px; margin:28px 0 34px; padding-bottom:22px; border-bottom:1px solid var(--line); }
+  .tabs button { font:inherit; font-size:13px; font-weight:600; padding:7px 14px; border:1px solid var(--line);
+    border-radius:999px; background:#fff; color:var(--ink2); cursor:pointer; }
+  .tabs button.on { background:var(--accent); border-color:var(--accent); color:#fff; }
+  h2 { font-size:17px; letter-spacing:-.01em; margin:32px 0 10px; font-weight:750; }
+  p, li { font-size:15px; color:var(--ink2); }
+  ul { margin:0; padding-left:20px; }
+  li { margin:5px 0; }
+  .note { margin-top:40px; padding:18px 20px; border-left:3px solid var(--accent); background:#fff;
+    border-radius:0 12px 12px 0; font-size:14px; color:var(--ink2); }
+  footer { margin-top:48px; padding-top:20px; border-top:1px solid var(--line); font-size:12px; color:var(--muted); }
+  a { color:var(--accent); }
+  @media (max-width:600px) { .wrap { padding:36px 18px 64px; } h1 { font-size:30px; } }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="eyebrow" id="eyebrow">Privacy</div>
+  <h1 id="title">Privacy Policy</h1>
+  <div class="meta" id="meta">Last updated 13 November 2026 · Version 1.2.0</div>
+  <div class="tabs" id="tabs"></div>
+  <div id="body"></div>
+  <div class="note" id="note"></div>
+  <footer>China Travel: Trip Prep · Not a ticketing platform. Contact: <a href="mailto:41867673@qq.com">41867673@qq.com</a></footer>
+</div>
+<script>
+const L = {
+  en: {
+    label:'English', eyebrow:'Privacy', title:'Privacy Policy',
+    meta:'Last updated 13 November 2026 · Version 1.2.0',
+    blocks:[
+      ['Overview','We take your privacy seriously. This policy explains how China Travel: Trip Prep handles your information. The app works without an account and does not require you to sign in.'],
+      ['What we store on your device',['Sights you add to your list, booking reminders you set, and trip dates','Your language and appearance preferences','Your translation conversation history']],
+      ['Where data lives',['All of the above stays only on your device. It is never uploaded, synced or shared.','We do not collect your name, ID number, phone number, email address, location, contacts or advertising identifiers.','We do not share or sell your data to any third party.','Uninstalling the app clears all local data.']],
+      ['Content updates (new in 1.2.0)',['The app anonymously downloads a public, static data file containing attraction details, ticket-release rules and translated text. These requests carry no name, device identifier or trip data.','Updates contain only data and text — no executable code — and never change app features or purchases.','The full attraction library is built into the app and works completely offline. A failed or unavailable update never blocks use.','You can see the content version, check for updates manually, or reset to the built-in data in the Mine tab.']],
+      ['Translation & voice',['Translation, speech recognition and readout run entirely on your device using Apple system frameworks. Your text and audio are never uploaded to any server.','Voice conversation requires Microphone and Speech Recognition permission, which you can revoke in system Settings at any time.','Apple may collect language-pair and performance statistics that exclude your text and translations; see Apple’s privacy policy.']],
+      ['Purchases & payment',['The full guide is a one-time purchase with a 7-day free trial.','Payment is handled by the Apple App Store (StoreKit). We never see or store card or payment credentials.','Purchases and restores are processed by Apple; refunds are handled by Apple.']],
+      ['Your control','Remove sights, turn off reminders, clear your translation history or reset downloaded content at any time in the app.'],
+      ['Contact','Questions or corrections about attraction data: 41867673@qq.com']
+    ],
+    note:'This app is not a ticketing platform. We do not book or sell tickets. Buy attraction tickets yourself through official channels.'
+  },
+  zh: {
+    label:'中文', eyebrow:'隐私', title:'隐私政策',
+    meta:'最后更新：2026 年 11 月 13 日 · 版本 1.2.0',
+    blocks:[
+      ['概述','我们非常重视你的隐私。本政策说明 China Travel: Trip Prep 如何处理你的信息。本 App 无需账号，也不需要登录。'],
+      ['手机本地保存什么',['你加入清单的景点、设置的预约提醒与行程日期','你的语言与界面主题偏好','你的翻译对话记录']],
+      ['数据存在哪里',['以上内容全部只保存在你的设备本地，不会上传、同步或共享。','我们不收集姓名、证件号、手机号、邮箱、位置、通讯录或广告标识符。','我们不向任何第三方分享或出售你的数据。','卸载 App 即可清除设备上的全部本地数据。']],
+      ['内容更新（1.2.0 新增）',['本 App 会匿名下载一个公开静态数据文件，内含景点资料、放票规则与多语文案；请求不含姓名、设备标识或行程信息。','更新只包含数据与文案，不含任何可执行代码，也不会改变 App 功能或付费内容。','完整景点库已内置，完全离线时照常可用；更新失败不会影响使用。','可在「我的」页查看内容版本、手动检查更新，或重置为内置数据。']],
+      ['翻译与语音',['翻译、语音识别与朗读由 Apple 系统框架在你的设备端完成，原文、译文与语音不会上传到任何服务器。','使用语音对话需授权麦克风与语音识别权限，可随时在系统设置中关闭。','Apple 可能收集不含原文与译文的语言对及性能统计，详见 Apple 隐私政策。']],
+      ['购买与支付',['完整指南为一次性买断，提供 7 天免费试用。','支付由 Apple App Store（StoreKit）处理，我们不接触、不保存银行卡或支付凭证。','购买与恢复购买均通过 Apple 完成；退款请向 Apple 申请。']],
+      ['你的控制权','你可以随时在 App 内移除景点、关闭提醒、清除翻译记录，或重置已下载的内容数据。'],
+      ['联系我们','景点数据问题或纠错：41867673@qq.com']
+    ],
+    note:'本 App 不是售票平台，不代订、不销售门票。景点门票请通过官方渠道自行购买。'
+  },
+  ru: {
+    label:'Русский', eyebrow:'Приватность', title:'Политика конфиденциальности',
+    meta:'Обновлено 13 ноября 2026 · Версия 1.2.0',
+    blocks:[
+      ['Обзор','Мы серьёзно относимся к приватности. Здесь описано, как приложение работает с вашими данными. Аккаунт и вход не требуются.'],
+      ['Что хранится на устройстве',['Достопримечательности в списке, напоминания о брони и даты поездки','Язык и тема оформления','История переводов']],
+      ['Где находятся данные',['Всё перечисленное хранится только на устройстве и никогда не загружается, не синхронизируется и не передаётся.','Мы не собираем имя, номер документа, телефон, e-mail, геолокацию, контакты или рекламные идентификаторы.','Мы не передаём и не продаём ваши данные третьим лицам.','Удаление приложения стирает все локальные данные.']],
+      ['Обновления контента (новое в 1.2.0)',['Приложение анонимно загружает публичный статический файл с данными о достопримечательностях, правилами выпуска билетов и переводами. Запросы не содержат имени, ID устройства или данных поездки.','Обновления содержат только данные и тексты — без исполняемого кода — и не меняют функции или покупки.','Полная база встроена в приложение и работает офлайн; неудачное обновление ничего не блокирует.','В разделе «Моё» можно увидеть версию, проверить обновления вручную и сбросить к встроенным данным.']],
+      ['Перевод и голос',['Перевод, распознавание и озвучивание выполняются на устройстве через системные фреймворки Apple; текст и аудио не загружаются ни на какой сервер.','Голосовой диалог требует разрешений на микрофон и распознавание речи; их можно отозвать в Настройках.','Apple может собирать статистику языковых пар и производительности без вашего текста и переводов.']],
+      ['Покупки и оплата',['Полный гид — разовая покупка с 7-дневным бесплатным периодом.','Оплату обрабатывает App Store Apple (StoreKit); мы не видим и не храним данные карты.','Покупки, восстановление и возвраты выполняются через Apple.']],
+      ['Ваш контроль','Вы можете в любой момент удалить места, отключить напоминания, очистить историю переводов или сбросить загруженные данные.'],
+      ['Контакты','Вопросы и исправления данных: 41867673@qq.com']
+    ],
+    note:'Приложение не продаёт билеты и не бронирует их. Покупайте билеты самостоятельно через официальные каналы.'
+  },
+  ko: {
+    label:'한국어', eyebrow:'개인정보', title:'개인정보 처리방침',
+    meta:'최종 업데이트 2026년 11월 13일 · 버전 1.2.0',
+    blocks:[
+      ['개요','개인정보를 중요하게 생각합니다. 이 방침은 앱이 정보를 어떻게 다루는지 설명합니다. 계정이나 로그인이 필요하지 않습니다.'],
+      ['기기에 저장되는 항목',['목록에 추가한 명소, 예약 알림, 여행 날짜','언어 및 화면 테마 설정','번역 대화 기록']],
+      ['데이터 위치',['위 항목은 모두 기기에만 저장되며 업로드·동기화·공유되지 않습니다.','이름, 신분증 번호, 전화번호, 이메일, 위치, 연락처, 광고 식별자를 수집하지 않습니다.','제3자에게 데이터를 공유하거나 판매하지 않습니다.','앱을 삭제하면 모든 로컬 데이터가 지워집니다.']],
+      ['콘텐츠 업데이트 (1.2.0 신규)',['앱은 명소 정보·발매 규칙·번역문이 담긴 공개 정적 데이터 파일을 익명으로 다운로드합니다. 요청에는 이름·기기 식별자·여행 정보가 없습니다.','업데이트에는 데이터와 문구만 포함되며 실행 코드가 없고 기능이나 구매 내용도 바뀌지 않습니다.','전체 명소 데이터가 앱에 내장되어 오프라인에서도 정상 사용 가능하며, 업데이트 실패가 이용을 막지 않습니다.','«마이»에서 콘텐츠 버전 확인, 수동 업데이트, 내장 데이터 초기화가 가능합니다.'],
+      ['번역 및 음성',['번역·음성 인식·읽기는 Apple 시스템 프레임워크로 기기 내 처리되며 원문·번역·음성은 어떤 서버로도 전송되지 않습니다.','음성 대화에는 마이크·음성 인식 권한이 필요하며 시스템 설정에서 언제든 해제할 수 있습니다.','Apple은 원문·번역을 제외한 언어 쌍 및 성능 통계를 수집할 수 있습니다.']],
+      ['구매 및 결제',['전체 가이드는 7일 무료 체험 후 1회 구매입니다.','결제는 Apple App Store(StoreKit)가 처리하며 카드·결제 정보를 보거나 저장하지 않습니다.','구매·복원·환불은 Apple을 통해 처리됩니다.']],
+      ['사용자 권한','언제든지 명소 삭제, 알림 끄기, 번역 기록 정리, 다운로드 데이터 초기화를 할 수 있습니다.'],
+      ['문의','명소 데이터 문의 및 오류 신고: 41867673@qq.com']
+    ],
+    note:'본 앱은 티켓 판매 플랫폼이 아니며 예약·판매를 하지 않습니다. 명소 티켓은 공식 채널에서 직접 구매하세요.'
+  },
+  ja: {
+    label:'日本語', eyebrow:'プライバシー', title:'プライバシーポリシー',
+    meta:'最終更新 2026年11月13日 · バージョン 1.2.0',
+    blocks:[
+      ['概要','当アプリはプライバシーを重視しています。本方針は情報の取り扱いを説明します。アカウントやログインは不要です。'],
+      ['端末に保存されるもの',['リストに追加した名所、設定した予約リマインダー、旅行日程','言語と画面テーマの設定','翻訳の会話履歴']],
+      ['データの保存先',['上記はすべて端末内にのみ保存され、アップロード・同期・共有は行いません。','氏名、証明書番号、電話番号、メール、位置情報、連絡先、広告識別子は収集しません。','第三者へデータを共有・販売することはありません。','アプリを削除するとローカルデータはすべて消去されます。'],
+      ['コンテンツ更新（1.2.0 で追加）',['アプリは名所情報・発売ルール・翻訳文を含む公開の静的データファイルを匿名で取得します。リクエストに氏名・端末識別子・旅行情報は含まれません。','更新にはデータと文のみが含まれ、実行コードはなく、機能や購入内容も変わりません。','全名所データはアプリに内蔵されオフラインでも利用可能です。更新失敗が利用を妨げることはありません。','「マイ」でコンテンツのバージョン確認、手動更新、内蔵データへのリセットができます。']],
+      ['翻訳と音声',['翻訳・音声認識・読み上げは Apple のシステムフレームワークで端末内処理され、原文・訳文・音声はどのサーバーにも送信されません。','音声対話にはマイクと音声認識の権限が必要で、システム設定からいつでも解除できます。','Apple は原文・訳文を含まない言語ペアとパフォーマンス統計を収集する場合があります。']],
+      ['購入とお支払い',['完全ガイドは 7日間の無料試用付きの買い切りです。','お支払いは Apple App Store (StoreKit) が処理し、カード・決済情報は確認・保存しません。','購入・復元・返金は Apple を通じて行われます。']],
+      ['あなたの管理権','名所の削除、リマインダーのオフ、翻訳履歴の消去、ダウンロード済みデータのリセットをいつでも行えます。'],
+      ['お問い合わせ','名所データのご質問・修正依頼: 41867673@qq.com']
+    ],
+    note:'本アプリは発券プラットフォームではありません。チケットの予約・販売は行わず、公式チャネルでご自身でご購入ください。'
+  }
+};
+const order = ['en','zh','ru','ko','ja'];
+let cur = 'en';
+function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;'); }
+function render(){
+  const d = L[cur];
+  document.documentElement.lang = cur === 'zh' ? 'zh-CN' : cur;
+  document.getElementById('eyebrow').textContent = d.eyebrow;
+  document.getElementById('title').textContent = d.title;
+  document.getElementById('meta').textContent = d.meta;
+  document.getElementById('note').textContent = d.note;
+  document.querySelectorAll('#tabs button').forEach(b => b.classList.toggle('on', b.dataset.l === cur));
+  document.getElementById('body').innerHTML = d.blocks.map(([h, v]) =>
+    '<h2>' + esc(h) + '</h2>' + (Array.isArray(v)
+      ? '<ul>' + v.map(x => '<li>' + esc(x) + '</li>').join('') + '</ul>'
+      : '<p>' + esc(v) + '</p>')).join('');
+}
+const tabs = document.getElementById('tabs');
+tabs.innerHTML = order.map(k => '<button type="button" data-l="' + k + '">' + esc(L[k].label) + '</button>').join('');
+tabs.addEventListener('click', e => { const b = e.target.closest('button'); if (b) { cur = b.dataset.l; render(); window.scrollTo({ top: 0, behavior: 'smooth' }); } });
+render();
+</script>
+</body>
+</html>
