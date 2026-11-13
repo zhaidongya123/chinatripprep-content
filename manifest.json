@@ -1,6 +1,6 @@
 {
   "schema": "ctp-manifest/v1",
-  "updatedAt": "2026-11-13T13:03:35Z",
+  "updatedAt": "2026-11-13T13:03:45Z",
   "rules": {
     "file": "v1.json",
     "version": 1
@@ -13,5 +13,9 @@
     "bytes": 914657,
     "sha256": "2ce3984f385ac2f6ed1793d407c043501a50de622c154947d085d6c98f73b96b"
   },
-  "note": "纯数据内容包清单。App 冷启动先读本文件，版本无变化则不下载大包。"
+  "note": "纯数据内容包清单。App 冷启动先读本文件，版本无变化则不下载大包。",
+  "urls": {
+    "pages": "https://zhaidongya123.github.io/chinatripprep-content/manifest.json",
+    "jsdelivr": "https://cdn.jsdelivr.net/gh/zhaidongya123/chinatripprep-content@main/manifest.json"
+  }
 }
